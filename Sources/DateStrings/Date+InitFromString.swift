@@ -13,11 +13,14 @@ public extension Date {
     /**
      * This new helper initialiser lets us initialise a Date object from any string format we please.
      */
-    init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String = "en_US_POSIX") {
+    init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String? = nil) {
         let dateStringFormatter = DateFormatter()
 
         dateStringFormatter.dateFormat = format
-        dateStringFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
+
+        if let locale = locale {
+            dateStringFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
+        }
 
         let date = dateStringFormatter.date(from: dateString)!
 

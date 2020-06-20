@@ -30,13 +30,16 @@ public extension Date {
      *
      * - Parameters:
      *  - inStyle: The DateFormatter.Style that you wish to use to format the date.
-     *  - locale: The locale that you wish to represent the date in.
+     *  - locale: [Optional] The locale that you wish to represent the date in.
      *
      * - Returns: A string of the date in a DateFormatter.Style format.
      */
-    func asString(inStyle style: DateFormatter.Style, locale: String = "en_US_POSIX") -> String {
+    func asString(inStyle style: DateFormatter.Style, locale: String? = nil) -> String {
         dateFormatter.dateStyle = style
-        dateFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
+
+        if let locale = locale {
+            dateFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
+        }
 
         return dateFormatter.string(from: self)
     }
@@ -53,13 +56,16 @@ public extension Date {
      *
      * - Parameters:
      *  - inFormat: The date format string that you wish the Date to be displayed in.
-     *  - locale: The locale that you wish to represent the date in.
+     *  - locale: [Optional] The locale that you wish to represent the date in.
      *
      * - Returns: A string of the date in a custom format.
      */
-    func asString(inFormat format: String, locale: String = "en_US_POSIX") -> String {
+    func asString(inFormat format: String, locale: String? = nil) -> String {
         dateFormatter.dateFormat = format
-        dateFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
+
+        if let locale = locale {
+            dateFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
+        }
 
         return dateFormatter.string(from: self)
     }

@@ -28,11 +28,11 @@ public extension Date {
      *
      * - Parameters:
      *  - inStyle: The DateFormatter.Style that you wish to use to format the date.
-     *  - locale: The locale that you wish to represent the date in.
+     *  - locale: [Optional] The locale that you wish to represent the date in.
      *
      * - Returns: A string of the date in a DateFormatter.Style format.
      */
-    func toString(inStyle style: DateFormatter.Style, locale: String = "en_US_POSIX") -> String {
+    func toString(inStyle style: DateFormatter.Style, locale: String? = nil) -> String {
         return self.asString(inStyle: style, locale: locale)
     }
 
@@ -48,11 +48,11 @@ public extension Date {
      *
      * - Parameters:
      *  - inFormat: The date format string that you wish the Date to be displayed in.
-     *  - locale: The locale that you wish to represent the date in.
+     *  - locale: [Optional] The locale that you wish to represent the date in.
      *
      * - Returns: A string of the date in a custom format.
      */
-    func toString(inFormat format: String, locale: String = "en_US_POSIX") -> String {
+    func toString(inFormat format: String, locale: String? = nil) -> String {
         return self.asString(inFormat: format, locale: locale)
     }
 }

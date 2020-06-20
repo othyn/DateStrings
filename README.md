@@ -81,7 +81,9 @@ This package is an extension to the base `Date` object, with all methods and pro
 
 ### Initialiser
 
-There is a new initialiser that allows for quickly initialising a `Date` object from a date string. You can provide a custom format for the string and if necessary the locale for the string to be parsed in.
+There is a new initialiser that allows for quickly initialising a `Date` object from a date string. You can provide a custom format for the string.
+
+By default, the locale will be the locale of the device that the app is being run on. You can stop this by passing a fixed locale string to the method as the `locale` parameter.
 
 ```swift
 init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String = "en_US_POSIX") { ... }
@@ -103,10 +105,12 @@ let date = Date(fromString: "2007-06-29 23:49:59", format: "yyyy-MM-dd HH:mm:ss"
 
 This method allows you to get the date in a format of your choosing, from a `DateFormatter.Style` or a custom provided format and/or locale.
 
-```swift
-func asString(inStyle style: DateFormatter.Style, locale: String = "en_US_POSIX") -> String { ... }
+By default, the locale will be the locale of the device that the app is being run on. You can stop this by passing a fixed locale string to the method as the `locale` parameter.
 
-func asString(inFormat format: String, locale: String = "en_US_POSIX") -> String {
+```swift
+func asString(inStyle style: DateFormatter.Style, locale: String? = nil) -> String { ... }
+
+func asString(inFormat format: String, locale: String? = nil) -> String { ... }
 ```
 
 An example of the `inStyle` usage:
