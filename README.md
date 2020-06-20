@@ -1,15 +1,18 @@
 # DateStrings
 
-A Swift 5 Date extension that adds helpful string interpretations.
+![Swift](https://github.com/othyn/DateStrings/workflows/Swift/badge.svg)
+[![GitHub issues](https://img.shields.io/github/issues/othyn/DateStrings)](https://github.com/othyn/DateStrings/issues)
+[![GitHub forks](https://img.shields.io/github/forks/othyn/DateStrings)](https://github.com/othyn/DateStrings/network)
+[![GitHub stars](https://img.shields.io/github/stars/othyn/DateStrings)](https://github.com/othyn/DateStrings/stargazers)
+[![GitHub license](https://img.shields.io/github/license/othyn/DateStrings)](https://github.com/othyn/DateStrings/blob/master/LICENSE)
+
+A Swift 5 `Date` extension that adds helpful string accessors.
 
 ## How to use
 
-This project is a Swift 5 package and makes use of Swift Package Manager (SPM) to integrate it into your Swift project.
+This is Swift 5 package and makes use of Swift Package Manager (SPM) to integrate it into your Swift project.
 
 Swift Swift Swift.
-
-This package is an extension to the base `Date` object. So all options are accessible via any inherited objects or the `Date` object
-itself.
 
 ### Adding via Xcode
 
@@ -38,6 +41,10 @@ Add the following as a dependency to your `Package.swift` within your project di
 ```
 
 After specifying "DateStrings" as a dependency of the target in which you want to use it, run swift package update.
+
+### Importing the library into your project
+
+Add `import DateStrings` to the top of the file you wish to use the library in. This package is an extension to the base `Date` object, with all methods and properties accessible via any inherited objects or the `Date` object itself.
 
 ## Building
 
