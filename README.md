@@ -1,6 +1,7 @@
 # DateStrings
 
-![Swift](https://github.com/othyn/DateStrings/workflows/Swift/badge.svg)
+![Build and Test](https://github.com/othyn/DateStrings/workflows/Build%20and%20Test/badge.svg)
+![Code Coverage](https://github.com/othyn/DateStrings/workflows/Code%20Coverage/badge.svg)
 [![GitHub issues](https://img.shields.io/github/issues/othyn/DateStrings)](https://github.com/othyn/DateStrings/issues)
 [![GitHub forks](https://img.shields.io/github/forks/othyn/DateStrings)](https://github.com/othyn/DateStrings/network)
 [![GitHub stars](https://img.shields.io/github/stars/othyn/DateStrings)](https://github.com/othyn/DateStrings/stargazers)
