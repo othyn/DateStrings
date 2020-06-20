@@ -9,7 +9,7 @@
 [![Quote](https://img.shields.io/badge/just-one%20more%20thing-lightgrey)](https://en.wikipedia.org/wiki/IPhone_(1st_generation))
 [![Love](https://img.shields.io/badge/built%20with-love-red)](https://img.shields.io/badge/built%20with-love-red)
 
-A Swift 5 `Date` extension that adds helpful string accessors.
+A Swift 5 `Date` extension that adds helpful string accessors. With new methods and properties that make getting a string from a Date easy, with plenty of customisation and available options. There is also a handy init from string too!
 
 ## Table of contents
 
