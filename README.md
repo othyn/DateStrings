@@ -21,6 +21,15 @@ A Swift 5 `Date` extension that adds helpful string accessors.
   - [asString](#asString)
     - [toString](#toString)
   - [day](#day)
+  - [dayShort](#dayshort)
+  - [dayAsSingleDigit](#dayassingledigit)
+  - [dayAsDoubleDigit](#dayasdoubledigit)
+  - [month](#month)
+  - [monthShort](#monthshort)
+  - [monthAsSingleDigit](#monthassingledigit)
+  - [monthAsDoubleDigit](#monthasdoubledigit)
+  - [year](#year)
+  - [yearShort](#yearshort)
 - [Building](#building)
 - [Testing](#testing)
 - [Useful Reference Material](#useful-reference-material)
@@ -262,6 +271,34 @@ let month = date.monthAsDoubleDigit
 ...
 
 Text(month) // 06
+```
+
+### year
+
+A helpful computed property for getting the year from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let year = date.year
+
+...
+
+Text(year) // 2007
+```
+
+### yearShort
+
+A helpful computed property for getting the short year from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let year = date.yearShort
+
+...
+
+Text(year) // 07
 ```
 
 ## Building
