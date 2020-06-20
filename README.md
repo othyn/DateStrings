@@ -86,7 +86,7 @@ There is a new initialiser that allows for quickly initialising a `Date` object 
 By default, the locale will be the locale of the device that the app is being run on. You can stop this by passing a fixed locale string to the method as the `locale` parameter.
 
 ```swift
-init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String = "en_US_POSIX") { ... }
+init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String? = nil) { ... }
 ```
 
 This allows for the following to be used to create a `Date` instance object from a string.
