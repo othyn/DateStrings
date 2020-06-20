@@ -17,6 +17,10 @@ A Swift 5 `Date` extension that adds helpful string accessors.
   - [Adding via SPM Manually](#adding-via-spm-manually)
 - [Importing The Library Into Your Project](#importing-the-library-into-your-project)
 - [Usage](#usage)
+  - [Initialiser](#initialiser)
+  - [asString](#asString)
+    - [toString](#toString)
+  - [day](#day)
 - [Building](#building)
 - [Testing](#testing)
 - [Useful Reference Material](#useful-reference-material)
@@ -37,7 +41,7 @@ Add the package via the following menu's whilst in your Xcode project:
 File > Swift Packages > Add Package Dependency...
 ```
 
-Paste this git repo URL into the search bar at the top and:
+Paste this git repo URL into the search bar at the top:
 
 ```url
 https://github.com/othyn/DateStrings.git
@@ -65,7 +69,102 @@ This package is an extension to the base `Date` object, with all methods and pro
 
 ## Usage
 
-< API DOCS IN PROGRESS >
+### Initialiser
+
+There is a new initialiser that allows for quickly initialising a `Date` object from a date string.
+
+```swift
+init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String = "en_US_POSIX") { ... }
+```
+
+This allows for the following to be used to create a `Date` instance object from a string.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+```
+
+This also allows for passing in a custom format and/or a locale.
+
+```swift
+let date = Date(fromString: "2007-06-29 23:49:59", format: "yyyy-MM-dd HH:mm:ss", locale: "en_US_POSIX")
+```
+
+### asString
+
+This method allows you to get the date in a format of your choosing, from a `DateFormatter.Style` or a custom provided format and/or locale.
+
+```swift
+func asString(inStyle style: DateFormatter.Style, locale: String = "en_US_POSIX") -> String { ... }
+
+func asString(inFormat format: String, locale: String = "en_US_POSIX") -> String {
+```
+
+An example of the `inStyle` usage:
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let dateFullString = date.asString(inStyle: .full)
+
+...
+
+Text(dateFullString) // Friday, June 29, 2007
+```
+
+An example of the `inFormat` usage:
+
+```swift
+let date = Date(fromString: "2007-06-29 23:49:59", format: "yyyy-MM-dd HH:mm:ss")
+
+let dateCustomString = date.asString(inFormat: "yyyy-MM-dd HH:mm:ss")
+
+...
+
+Text(dateCustomString) // 2007-06-29 23:49:59
+```
+
+#### toString
+
+There is also an alternative syntax `toString`, which mirrors the `asString` methods exactly (uses them internally too, just maps the functions forward). Just a personal preference of naming on this one. As in, use it if you prefer the `toString` method names.
+
+
+An example of the `inStyle` usage:
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let dateFullString = date.toString(inStyle: .full)
+
+...
+
+Text(dateFullString) // Friday, June 29, 2007
+```
+
+An example of the `inFormat` usage:
+
+```swift
+let date = Date(fromString: "2007-06-29 23:49:59", format: "yyyy-MM-dd HH:mm:ss")
+
+let dateCustomString = date.toString(inFormat: "yyyy-MM-dd HH:mm:ss")
+
+...
+
+Text(dateCustomString) // 2007-06-29 23:49:59
+```
+
+### day
+
+A helpful accessor for getting the day from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let day = date.day
+
+...
+
+Text(day) // Friday
+```
 
 ## Building
 
