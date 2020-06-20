@@ -22,19 +22,21 @@ public extension Date {
      * ```
      * let date = Date()
      *
-     * date.asString(inStyle: .full)   // Friday, 29 June 2007
-     * date.asString(inStyle: .long)   // 29 June 2007
-     * date.asString(inStyle: .medium) // 29 Jun 2007
-     * date.asString(inStyle: .short)  // 29/06/2007
+     * date.asString(inStyle: .full)   // Friday, June 29, 2007
+     * date.asString(inStyle: .long)   // June 29, 2007
+     * date.asString(inStyle: .medium) // Jun 29, 2007
+     * date.asString(inStyle: .short)  // 6/29/07
      * ```
      *
      * - Parameters:
-     * - inStyle: The DateFormatter.Style that you wish to use to format the date.
+     *  - inStyle: The DateFormatter.Style that you wish to use to format the date.
+     *  - locale: The locale that you wish to represent the date in.
      *
      * - Returns: A string of the date in a DateFormatter.Style format.
      */
-    func asString(inStyle style: DateFormatter.Style) -> String {
+    func asString(inStyle style: DateFormatter.Style, locale: String = "en_US_POSIX") -> String {
         dateFormatter.dateStyle = style
+        dateFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
 
         return dateFormatter.string(from: self)
     }
@@ -50,12 +52,14 @@ public extension Date {
      * ```
      *
      * - Parameters:
-     *      - inFormat: The date format string that you wish the Date to be displayed in.
+     *  - inFormat: The date format string that you wish the Date to be displayed in.
+     *  - locale: The locale that you wish to represent the date in.
      *
      * - Returns: A string of the date in a custom format.
      */
-    func asString(inFormat format: String) -> String {
+    func asString(inFormat format: String, locale: String = "en_US_POSIX") -> String {
         dateFormatter.dateFormat = format
+        dateFormatter.locale = NSLocale(localeIdentifier: locale) as Locale
 
         return dateFormatter.string(from: self)
     }

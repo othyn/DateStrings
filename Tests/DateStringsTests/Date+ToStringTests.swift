@@ -20,7 +20,7 @@ class DateToStringTests: XCTestCase {
         let dateFullString = date.toString(inStyle: .full)
 
         // Then
-        XCTAssertEqual(dateFullString, "Friday, 29 June 2007")
+        XCTAssertEqual(dateFullString, "Friday, June 29, 2007")
     }
 
     func testItMakesALongStyledDate() {
@@ -31,7 +31,7 @@ class DateToStringTests: XCTestCase {
         let dateLongString = date.toString(inStyle: .long)
 
         // Then
-        XCTAssertEqual(dateLongString, "29 June 2007")
+        XCTAssertEqual(dateLongString, "June 29, 2007")
     }
 
     func testItMakesAMediumStyledDate() {
@@ -42,7 +42,7 @@ class DateToStringTests: XCTestCase {
         let dateMediumString = date.toString(inStyle: .medium)
 
         // Then
-        XCTAssertEqual(dateMediumString, "29 Jun 2007")
+        XCTAssertEqual(dateMediumString, "Jun 29, 2007")
     }
 
     func testItMakesAShortStyledDate() {
@@ -53,7 +53,7 @@ class DateToStringTests: XCTestCase {
         let dateShortString = date.toString(inStyle: .short)
 
         // Then
-        XCTAssertEqual(dateShortString, "29/06/2007")
+        XCTAssertEqual(dateShortString, "6/29/07")
     }
 
     func testItMakesACustomFormattedDate() {
