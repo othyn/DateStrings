@@ -47,12 +47,12 @@ class DateMonthStringsTests: XCTestCase {
 
     func testItHasTheRightDoubleDigitMonth() {
         // Given: A date that we want the double digit month for
-        let date = Date(fromString: "2007-11-29")
+        let date = Date(fromString: "2007-06-29")
 
         // When: The double digit month requested
         let month = date.monthAsDoubleDigit
 
         // Then
-        XCTAssertEqual(month, "11")
+        XCTAssertEqual(month, "06")
     }
 }

@@ -154,7 +154,7 @@ Text(dateCustomString) // 2007-06-29 23:49:59
 
 ### day
 
-A helpful accessor for getting the day from the `Date`.
+A helpful computed property for getting the day from the `Date`.
 
 ```swift
 let date = Date(fromString: "2007-06-29")
@@ -164,6 +164,104 @@ let day = date.day
 ...
 
 Text(day) // Friday
+```
+
+### dayShort
+
+A helpful computed property for getting the short day from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let day = date.dayShort
+
+...
+
+Text(day) // Fri
+```
+
+### dayAsSingleDigit
+
+A helpful computed property for getting the single digit day from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-05")
+
+let day = date.dayAsSingleDigit
+
+...
+
+Text(day) // 5
+```
+
+### dayAsDoubleDigit
+
+A helpful computed property for getting the double digit day from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-05")
+
+let day = date.dayAsDoubleDigit
+
+...
+
+Text(day) // 05
+```
+
+### month
+
+A helpful computed property for getting the month from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let month = date.month
+
+...
+
+Text(month) // June
+```
+
+### monthShort
+
+A helpful computed property for getting the short month from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let month = date.monthShort
+
+...
+
+Text(month) // Jun
+```
+
+### monthAsSingleDigit
+
+A helpful computed property for getting the single digit month from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let month = date.monthAsSingleDigit
+
+...
+
+Text(month) // 6
+```
+
+### monthAsDoubleDigit
+
+A helpful computed property for getting the double digit month from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29")
+
+let month = date.monthAsDoubleDigit
+
+...
+
+Text(month) // 06
 ```
 
 ## Building
