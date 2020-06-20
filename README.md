@@ -2,11 +2,12 @@
 
 ![Build and Tests](https://github.com/othyn/DateStrings/workflows/Build%20and%20Test/badge.svg)
 ![Code Coverage](https://github.com/othyn/DateStrings/workflows/Code%20Coverage/badge.svg)
+[![Code Coverage](https://img.shields.io/badge/Code%20Coverage-100%25-blueviolet)](https://img.shields.io/badge/Code%20Coverage-100%25-blueviolet)
 [![GitHub issues](https://img.shields.io/github/issues/othyn/DateStrings)](https://github.com/othyn/DateStrings/issues)
 [![GitHub forks](https://img.shields.io/github/forks/othyn/DateStrings)](https://github.com/othyn/DateStrings/network)
 [![GitHub stars](https://img.shields.io/github/stars/othyn/DateStrings)](https://github.com/othyn/DateStrings/stargazers)
 [![GitHub license](https://img.shields.io/github/license/othyn/DateStrings)](https://github.com/othyn/DateStrings/blob/master/LICENSE)
-[![Quote](https://img.shields.io/badge/just-one%20more%20thing-green)](https://img.shields.io/badge/just-one%20more%20thing-green)
+[![Quote](https://img.shields.io/badge/just-one%20more%20thing-lightgrey)](https://img.shields.io/badge/just-one%20more%20thing-lightgrey)
 
 A Swift 5 `Date` extension that adds helpful string accessors.
 
