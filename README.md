@@ -7,6 +7,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/othyn/DateStrings)](https://github.com/othyn/DateStrings/stargazers)
 [![GitHub license](https://img.shields.io/github/license/othyn/DateStrings)](https://github.com/othyn/DateStrings/blob/master/LICENSE)
 [![Quote](https://img.shields.io/badge/just-one%20more%20thing-lightgrey)](https://en.wikipedia.org/wiki/IPhone_(1st_generation))
+[![Love](https://img.shields.io/badge/built%20with-love-red)](https://img.shields.io/badge/built%20with-love-red)
 
 A Swift 5 `Date` extension that adds helpful string accessors.
 
