@@ -1,7 +1,7 @@
 # DateStrings
 
 [![Build and Tests](https://github.com/othyn/DateStrings/workflows/Build%20and%20Tests/badge.svg)](https://github.com/othyn/DateStrings/actions)
-[Code Coverage](https://img.shields.io/badge/Code%20Coverage-100%25-blueviolet)
+[![Code Coverage](https://img.shields.io/badge/Code%20Coverage-100%25-blueviolet)](https://img.shields.io/badge/Code%20Coverage-100%25-blueviolet)
 [![GitHub issues](https://img.shields.io/github/issues/othyn/DateStrings)](https://github.com/othyn/DateStrings/issues)
 [![GitHub forks](https://img.shields.io/github/forks/othyn/DateStrings)](https://github.com/othyn/DateStrings/network)
 [![GitHub stars](https://img.shields.io/github/stars/othyn/DateStrings)](https://github.com/othyn/DateStrings/stargazers)
