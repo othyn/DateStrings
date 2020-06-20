@@ -81,7 +81,7 @@ This package is an extension to the base `Date` object, with all methods and pro
 
 ### Initialiser
 
-There is a new initialiser that allows for quickly initialising a `Date` object from a date string.
+There is a new initialiser that allows for quickly initialising a `Date` object from a date string. You can provide a custom format for the string and if necessary the locale for the string to be parsed in.
 
 ```swift
 init(fromString dateString: String, format: String = "yyyy-MM-dd", locale: String = "en_US_POSIX") { ... }
