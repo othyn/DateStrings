@@ -57,9 +57,9 @@ Paste this git repo URL into the search bar at the top:
 https://github.com/othyn/DateStrings.git
 ```
 
-Press the enter key or `Next` and for the rules, select `Version` as `Up to Next Major`: `1.0.0` < `2.0.0`.
+Press the enter key or `Next` and for the rules, if not automatically selected, select `Version` as `Up to Next Major`: `1.0.0` < `2.0.0`.
 
-Hit `Next` through the following pages until added to your project.
+Hit `Finish` once Xcode has downloaded and initialised the package to add it to your project.
 
 ### Adding via SPM Manually
 
