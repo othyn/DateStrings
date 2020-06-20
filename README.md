@@ -1,4 +1,4 @@
-# DateStrings
+# 🗓 DateStrings
 
 [![Build and Tests](https://github.com/othyn/DateStrings/workflows/Build%20and%20Tests/badge.svg)](https://github.com/othyn/DateStrings/actions?query=workflow%3A%22Build+and+Tests%22)
 [![Code Coverage](https://img.shields.io/badge/Code%20Coverage-100%25-blueviolet)](https://github.com/othyn/DateStrings/actions?query=workflow%3A%22Build+and+Tests%22)
@@ -10,7 +10,20 @@
 
 A Swift 5 `Date` extension that adds helpful string accessors.
 
-## How to use
+## Table of contents
+
+- [Installation](#installation)
+  - [Adding via Xcode](#adding-via-xcode)
+  - [Adding via SPM Manually](#adding-via-spm-manually)
+- [Importing The Library Into Your Project](#importing-the-library-into-your-project)
+- [Usage](#usage)
+- [Building](#building)
+- [Testing](#testing)
+- [Useful Reference Material](#useful-reference-material)
+- [Changelog](#changelog)
+- [Versioning](#versioning)
+
+## Installation
 
 This is Swift 5 package and makes use of Swift Package Manager (SPM) to integrate it into your Swift project.
 
@@ -34,7 +47,7 @@ Press the enter key or `Next` and for the rules, select `Version` as `Up to Next
 
 Hit `Next` through the following pages until added to your project.
 
-### Adding via SPM manually
+### Adding via SPM Manually
 
 Add the following as a dependency to your `Package.swift` within your project directory:
 
@@ -44,9 +57,15 @@ Add the following as a dependency to your `Package.swift` within your project di
 
 After specifying "DateStrings" as a dependency of the target in which you want to use it, run swift package update.
 
-### Importing the library into your project
+## Importing The Library Into Your Project
 
-Add `import DateStrings` to the top of the file you wish to use the library in. This package is an extension to the base `Date` object, with all methods and properties accessible via any inherited objects or the `Date` object itself.
+Add `import DateStrings` to the top of the file you wish to use the library in.
+
+This package is an extension to the base `Date` object, with all methods and properties accessible via any inherited objects or the `Date` object itself.
+
+## Usage
+
+< API DOCS IN PROGRESS >
 
 ## Building
 
@@ -64,7 +83,7 @@ To run the tests, use Xcode's standard test tools via `⌘ + U` or use the `swif
 swift test
 ```
 
-## Useful reference material
+## Useful Reference Material
 
 Below are some really useful references that I found when building this extension Library to aid with date formatting and converting
 formats.
@@ -85,4 +104,12 @@ There is also [something to note](https://stackoverflow.com/q/27321993/4494375) 
 `DateFormatter` are an [expensive operation](https://stackoverflow.com/q/27321993/4494375), with Apple even stating so in their
 2014 docs. If anyone has any ways to optimise this, I'm all ears. I've tried to be as performant as possible to what I know.
 
-There is also an easter egg in the library for funsies, if you know what to look for.
+There is also an easter egg in the library for funsies, [if you know what to look for](https://en.wikipedia.org/wiki/IPhone_(1st_generation)).
+
+## Changelog
+
+[View the repo's releases to see the change history](https://github.com/othyn/DateStrings/releases).
+
+## Versioning
+
+[This project uses Semantic Versioning](https://semver.org/).
