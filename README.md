@@ -11,6 +11,10 @@
 
 A Swift 5 `Date` extension that adds helpful string accessors. With new methods and properties that make getting a string from a Date easy, with plenty of customisation, locale handled automatically and available options. There is also a handy init from string too!
 
+<p align="center">
+  <img src="./Assets/preview.gif?raw=true">
+</p>
+
 ## Table of contents
 
 - [Installation](#installation)
