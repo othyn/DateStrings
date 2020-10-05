@@ -35,6 +35,8 @@ A Swift 5 `Date` extension library that adds helpful string accessors. With new 
   - [monthAsDoubleDigit](#monthasdoubledigit)
   - [year](#year)
   - [yearShort](#yearshort)
+  - [datestamp](#datestamp)
+  - [iso8601Python](#iso8601python)
 - [Building](#building)
 - [Testing](#testing)
 - [Useful Reference Material](#useful-reference-material)
@@ -308,6 +310,34 @@ let year = date.yearShort
 ...
 
 Text(year) // 07
+```
+
+### datestamp
+
+A helpful computed property for getting the datestamp from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29 10:00:00", format: "yyyy-MM-dd HH:mm:ss")
+
+let datestamp = date.datestamp
+
+...
+
+Text(datestamp) // 2007-06-29 10:00:00
+```
+
+### iso8601Python
+
+A helpful computed property for getting the ISO 8601 Python format from the `Date`.
+
+```swift
+let date = Date(fromString: "2007-06-29 10:00:00", format: "yyyy-MM-dd HH:mm:ss")
+
+let iso8601Python = date.iso8601Python
+
+...
+
+Text(iso8601Python) // 2007-06-29T10:00:00.000
 ```
 
 ## Building
